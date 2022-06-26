@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "LocalNetworkCrawler": {
+      "commandName": "Project",
+      "commandLineArgs": "--no-input true"
+    }
+  }
+}
