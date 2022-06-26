@@ -9,7 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - uses: actions/checkout@v3
@@ -24,9 +24,9 @@ jobs:
     - name: Publish
       run: dotnet publish
     - name: copy license
-      run: cp LICENSE.txt ./LocalNetworkCrawler/publish/
+      run: copy LICENSE.txt ./LocalNetworkCrawler/publish/
     - name: copy readme
-      run: cp README.md ./LocalNetworkCrawler/publish/
+      run: copy README.md ./LocalNetworkCrawler/publish/
     - name: Zip Release
       uses: TheDoctor0/zip-release@0.6.2
       with:
