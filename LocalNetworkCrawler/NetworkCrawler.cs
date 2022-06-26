@@ -292,7 +292,6 @@ internal class NetworkCrawler
     /// <param name="interfaceSection"></param>
     private void ParseDevicesFromInterface(string interfaceSection)
     {
-
         foreach (var line in interfaceSection.Split(Environment.NewLine))
         {
             // Ignore empty lines
@@ -322,5 +321,4 @@ internal class NetworkCrawler
             Devices[ip] = mac;
         }
     }
-
 }
